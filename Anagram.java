@@ -19,23 +19,29 @@ public static void findAnagrams(String[] s1) {
 				}
 			}
 		}
-		System.out.println("       ");
+		System.out.println("");
 	}
 }
-
-public static int isValidIP(String s) {
-	String[]s1=s.split("[.]");
-	boolean flag=false;
-	if(s1.length==4) {
-	for (int i = 0; i < s1.length; i++) {
-		int a=Integer.parseInt(s1[i]);
-		//System.out.println(a);
-		if (a<0 || a>255) {
-			flag=false;
-			break;
+public static void duplicateRemove(String s)
+	{
+		StringBuffer s2=new StringBuffer();
+		char c[]=s.toCharArray();
+		int length=c.length;
+		for(int i=0;i<length;i++)
+		{
+			for(int j=i+1;j<length;j++)
+			{
+				if(c[i]==c[j])
+				{
+					c[j]=c[length-1];
+					j--;
+					length--;
+				}
+			}
+			s2=s2.append(c[i]);
 		}
-		else {
-			flag=true;
-			continue;
-		}
+		
+	   String s1=new String(s2);
+	   System.out.println(s1);
+	} 
 }
