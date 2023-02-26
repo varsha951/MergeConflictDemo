@@ -44,4 +44,19 @@ public static void duplicateRemove(String s)
 	   String s1=new String(s2);
 	   System.out.println(s1);
 	} 
+	public static void rotation(String str1, String str2) {
+		 StringBuffer sb=new StringBuffer("");
+		 for (int i = str2.length()-1; i >=0 ; i--) {
+			sb=sb.append(str2.charAt(i));
+		}
+		 System.out.println(sb);
+		 String s=sb.toString();
+		   if(s.equals(str1)) {
+			  System.out.println("both strings are rotation of each other");
+		   }
+		   else {
+			   System.out.println("both strings are not rotation of each other");
+		   }
+		   
+	   }
 }
