@@ -23,19 +23,15 @@ public static void findAnagrams(String[] s1) {
 	}
 }
 
-public static int isValidIP(String s) {
-	String[]s1=s.split("[.]");
-	boolean flag=false;
-	if(s1.length==4) {
-	for (int i = 0; i < s1.length; i++) {
-		int a=Integer.parseInt(s1[i]);
-		//System.out.println(a);
-		if (a<0 || a>255) {
-			flag=false;
-			break;
-		}
-		else {
-			flag=true;
-			continue;
-		}
+public class Factorial {
+     public static void facto(int n,int a) {
+    	 if(a<=0) {
+    		 return;
+    	 }
+    	 else if(a==1) {
+    		 System.out.println(n);
+    	 }
+    	 facto(n*a,--a);
+		
+	}
 }
