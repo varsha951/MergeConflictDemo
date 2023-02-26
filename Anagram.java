@@ -22,6 +22,7 @@ public static void findAnagrams(String[] s1) {
 		System.out.println("");
 	}
 }
+<<<<<<< HEAD
 public static void duplicateRemove(String s)
 	{
 		StringBuffer s2=new StringBuffer();
@@ -60,3 +61,18 @@ public static void duplicateRemove(String s)
 		   
 	   }
 }
+=======
+
+public class Factorial {
+     public static void facto(int n,int a) {
+    	 if(a<=0) {
+    		 return;
+    	 }
+    	 else if(a==1) {
+    		 System.out.println(n);
+    	 }
+    	 facto(n*a,--a);
+		
+	}
+}
+>>>>>>> branch2
