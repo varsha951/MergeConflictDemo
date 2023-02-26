@@ -19,7 +19,7 @@ public static void findAnagrams(String[] s1) {
 				}
 			}
 		}
-		System.out.println("");
+		System.out.println("       ");
 	}
 }
 
